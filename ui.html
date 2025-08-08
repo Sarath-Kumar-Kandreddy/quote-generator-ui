@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dose of Wisdom</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <h1>Daily Dose of Wisdom</h1>
+                <p>Inspire your day with timeless quotes</p>
+            </div>
+
+            <div class="quote-container" id="quoteContainer">
+                <div class="quote-text" id="quoteText"></div>
+                <div class="quote-author" id="quoteAuthor"></div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" id="newQuoteBtn">✨ New Quote</button>
+                <button class="btn btn-save" id="saveQuoteBtn">
+                    <span class="heart-icon" id="heartIcon">♡</span>
+                    <span id="saveText">Save Quote</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>❤️ Favourite Quotes</h2>
+                <button class="toggle-btn" id="toggleBtn">×</button>
+            </div>
+            <div class="favorites-list" id="favoritesList">
+                <div class="empty-state">No saved quotes yet. Start collecting your favorites!</div>
+            </div>
+        </div>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle">❤️</button>
+
+    <script src="ui.js"></script>
+</body>
+</html>
